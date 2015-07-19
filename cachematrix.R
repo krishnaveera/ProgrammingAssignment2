@@ -2,7 +2,10 @@
 ## functions do
 
 ## For a matrix "x", creates a "CacheMatrix" that can store 
-## the matrix x and its inverse
+## the matrix x and its inverse. x$get() will return the 
+## matrix, x$set(y) will set x to y and clear the inverse
+## x$setinverse(inv) will set the inverse to inv and 
+## x$getinverse() will return the inverse matrix if set
 
 makeCacheMatrix <- function(x = matrix()) {
 	inverse <- NULL
